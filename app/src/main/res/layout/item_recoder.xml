@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_padding_small"
+    android:gravity="center_vertical|end"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/margin_padding_min">
+
+    <LinearLayout
+        android:id="@+id/ll_recoder_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatto_bg_focused"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_padding_small">
+
+        <View
+            android:id="@+id/v_voice_anim"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/voice" />
+
+        <TextView
+            android:id="@+id/tv_voice_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_min"
+            android:textColor="#ff777777" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avater" />
+</LinearLayout>
+
+

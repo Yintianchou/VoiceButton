@@ -1,0 +1,3 @@
+include ':voicebutton'
+include ':app'
+rootProject.name = "VoiceButton"

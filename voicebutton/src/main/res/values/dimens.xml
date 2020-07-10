@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dia_corner_radius">8dp</dimen>
+    <dimen name="margin_padding">16dp</dimen>
+    <dimen name="margin_padding_big">32dp</dimen>
+    <dimen name="margin_padding_small">8dp</dimen>
+    <dimen name="margin_padding_min">4dp</dimen>
+
+    <dimen name="text_primary">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_big">20sp</dimen>
+    <dimen name="text_min">12sp</dimen>
+
+    <dimen name="divider_height">0.5dp</dimen>
+</resources>

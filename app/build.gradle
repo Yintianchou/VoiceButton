@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.lizhidan.voicebuttondemo"
+        minSdkVersion rootProject.ext.appMinSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true // 是否去除无效的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true
+            minifyEnabled true // 是否混淆
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.ext.kotlin_version"
+    implementation "androidx.core:core-ktx:$rootProject.ext.core_ktx"
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appcompat"
+    implementation project(path: ':voicebutton')
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerview"
+    implementation "org.permissionsdispatcher:permissionsdispatcher-ktx:$rootProject.ext.permissionsdispatcher_ktx"
+
+    testImplementation "junit:junit:$rootProject.ext.junit"
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.test_ext"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espresso_core"
+
+}

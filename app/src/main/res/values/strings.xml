@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VoiceButtonDemo</string>
+    <string name="voice_duration">%d\"</string>
+    <string name="str_permission_rationale">录音功能需要录音权限</string>
+    <string name="str_allow">允许</string>
+    <string name="str_ok">好的</string>
+    <string name="str_deny">拒绝</string>
+    <string name="permission_denied">您拒绝了授权，将无法使用录音功能，是否去开启权限？</string>
+</resources>
