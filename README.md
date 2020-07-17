@@ -1,5 +1,7 @@
 ﻿![](https://upload-images.jianshu.io/upload_images/20262249-7fcb9c3a8b5a1c78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+README: [English](https://github.com/Yintianchou/VoiceButton/blob/master/README.md) | [中文](https://github.com/Yintianchou/VoiceButton/blob/master/README-zh.md)
+
 A custom button control for recording voice,written by kotlin,extends AppCompatButton can use all its properties.
 
 ##Effect

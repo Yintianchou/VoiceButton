@@ -1,5 +1,7 @@
 ﻿![](https://upload-images.jianshu.io/upload_images/20262249-7fcb9c3a8b5a1c78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+README: [English](https://github.com/Yintianchou/VoiceButton/blob/master/README.md) | [中文](https://github.com/Yintianchou/VoiceButton/blob/master/README-zh.md)
+
 一个自定义录制语音的按钮控件，kotlin实现，继承AppCompatButton可使用其所有属性。
 
 ##使用效果图：
