@@ -2,23 +2,23 @@
 
 A custom button control for recording voice,written by kotlin,extends AppCompatButton can use all its properties.
 
-#####Effect
+##Effect
 ![](https://upload-images.jianshu.io/upload_images/20262249-dddbe7911fb6e387.gif?imageMogr2/auto-orient/strip)
-#####Background
+##Background
 - androidx
 
-#####Install
+##Install
 ```
 implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
 ```
-#####Usage
+##Usage
 1. Define widget in the layout file
 ```
 <com.lizhidan.voicebutton.VoiceButton
         android:id="@+id/vb_record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="长按录音" />
+        android:text="Long press to record" />
 ```
 2. Use in code
 ```
@@ -41,5 +41,5 @@ vbRecord.setRecorderListener(object : RecorderListener {
     }
 })
 ```
-#####Example
+##Example
 Please check the [sample code](https://github.com/Yintianchou/VoiceButton/tree/master/app/src/main/java/com/lizhidan/voicebuttondemo)

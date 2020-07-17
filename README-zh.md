@@ -2,9 +2,9 @@
 
 一个自定义录制语音的按钮控件，kotlin实现，继承AppCompatButton可使用其所有属性。
 
-#####使用效果图：
+##使用效果图：
 ![](https://upload-images.jianshu.io/upload_images/20262249-dddbe7911fb6e387.gif?imageMogr2/auto-orient/strip)
-#####使用方法
+##使用方法
 1.引入
 ```
 implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
