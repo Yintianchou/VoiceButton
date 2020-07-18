@@ -9,9 +9,16 @@ A custom button control for recording voice,written by kotlin,extends AppCompatB
 ##Background
 - androidx
 
-##Install
+##permission
+Please declare microphone permissions in the AndroidManifest.xml file, and dynamically ask for permission in Android 6.0 and above.
+
 ```
-implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+```
+##Install
+Add dependencies in module build.gradle file
+```
+implementation 'com.lizhidan.voicebutton:voicebutton:1.0.1'
 ```
 ##Usage
 1. Define widget in the layout file
@@ -23,6 +30,7 @@ implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
         android:text="Long press to record" />
 ```
 2. Use in code
+
 ```
 private lateinit var vbRecord: VoiceButton
 ...

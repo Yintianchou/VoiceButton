@@ -7,11 +7,17 @@ README: [English](https://github.com/Yintianchou/VoiceButton/blob/master/README.
 ##使用效果图：
 ![](https://upload-images.jianshu.io/upload_images/20262249-dddbe7911fb6e387.gif?imageMogr2/auto-orient/strip)
 ##使用方法
-1.引入
+1.添加权限
+需要在AndroidManifest.xml文件中声明麦克风权限并在Android 6.0及以上版本中动态询问获取权限。
 ```
-implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
-2.布局文件中定义控件
+2.添加依赖
+在模块的build.gradle文件中声明如下依赖
+```
+implementation 'com.lizhidan.voicebutton:voicebutton:1.0.1'
+```
+3.布局文件中定义控件
 ```
 <com.lizhidan.voicebutton.VoiceButton
         android:id="@+id/vb_record"
@@ -19,7 +25,7 @@ implementation 'com.lizhidan.voicebutton:voicebutton:1.0.0'
         android:layout_height="wrap_content"
         android:text="长按录音" />
 ```
-3.代码中使用
+4.代码中使用
 ```
 private lateinit var vbRecord: VoiceButton
 ...

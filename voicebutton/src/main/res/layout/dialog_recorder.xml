@@ -5,24 +5,31 @@
     android:background="@drawable/bg_dialog_loading"
     android:padding="@dimen/margin_padding">
 
-    <ImageView
-        android:id="@+id/iv_recorder_icon"
+    <LinearLayout
+        android:id="@+id/ll_record_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_recorder" />
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/iv_recorder_voice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/iv_recorder_icon"
-        android:src="@drawable/volume_1" />
+        <ImageView
+            android:id="@+id/iv_recorder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_recorder" />
+
+        <ImageView
+            android:id="@+id/iv_recorder_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/volume_1" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_recorder_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/iv_recorder_icon"
+        android:layout_below="@id/ll_record_icon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_padding_small"
         android:padding="@dimen/margin_padding_min"
